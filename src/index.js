@@ -7,23 +7,26 @@ import {
     Link
 } from "react-router-dom";
 import App from './App';
+import Team from "./Team";
 
 ReactDOM.render(
-    <Router>
         <React.StrictMode>
-            <Switch>
-                <Route path="/about">
-                    <App />
-                </Route>
-                <Route path="/users">
-                    <App />
-                </Route>
-                <Route path="/">
-                    <App />
-                </Route>
-            </Switch>
+            <Router>
+
+                <Switch>
+                    <Route path="/about">
+                        <App />
+                    </Route>
+                    <Route path="/team">
+                        <Team />
+                    </Route>
+                    <Route path="/">
+                        <App />
+                    </Route>
+                </Switch>
+            </Router>
+
         </React.StrictMode>,
         document.getElementById('root')
-    </Router>
 
 );

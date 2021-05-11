@@ -1,6 +1,11 @@
 .idea
 .idea/
 .env
+potusParse.js
+potusScraper.js
+reddit.js
+team.html
+giphyTeam.js
 
 .DS_STORE
 node_modules
