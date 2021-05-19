@@ -9,20 +9,30 @@ import {
 import App from './App';
 import Team from "./Team";
 
+function NotFound() {
+    return (
+        <div>
+            <h1>That page was not found</h1>
+        </div>
+    );
+}
+
+
 ReactDOM.render(
         <React.StrictMode>
             <Router>
 
                 <Switch>
-                    <Route path="/about">
+                    <Route exact path="/about">
                         <App />
                     </Route>
-                    <Route path="/team">
+                    <Route exact path="/team">
                         <Team />
                     </Route>
-                    <Route path="/">
+                    <Route exact path="/">
                         <App />
                     </Route>
+                    <Route path="" component={NotFound} />
                 </Switch>
             </Router>
 
