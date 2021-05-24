@@ -1,8 +1,8 @@
 import React, {useEffect} from 'react';
-import Nav from "./Nav";
-import myData from './team.json';
+import Nav from "../Nav";
+import myData from '../team.json';
 
-import galleryStyle from "./css/gallery.css";
+import galleryStyle from "../css/gallery.css";
 import {Masonry} from "masonic";
 
 const FakeCard = ({ data}) => (
@@ -64,9 +64,9 @@ function App() {
                     <div className="column is-9">
                         <nav className="breadcrumb" aria-label="breadcrumbs">
                             <ul>
-                                <li><a href="../">Reactions</a></li>
-                                <li><a href="../">Entertainment</a></li>
-                                <li><a href="../">Sports</a></li>
+                                <li><a href="../..">Reactions</a></li>
+                                <li><a href="../..">Entertainment</a></li>
+                                <li><a href="../..">Sports</a></li>
                                 <li className="is-active"><a href="#" aria-current="page">Fun</a></li>
                             </ul>
                         </nav>

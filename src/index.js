@@ -7,7 +7,7 @@ import {
     Link
 } from "react-router-dom";
 import App from './App';
-import Team from "./Team";
+import Team from "./pages/Team";
 
 function NotFound() {
     return (

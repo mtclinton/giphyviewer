@@ -2,7 +2,7 @@ import React, {useState, useEffect} from 'react';
 
 import {Masonry} from 'masonic'
 
-import galleryStyle from "../css/gallery.css"
+import galleryStyle from "../../css/gallery.css"
 
 function Content(props) {
 
