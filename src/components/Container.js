@@ -1,6 +1,6 @@
 import React from 'react';
-import SideBar from "./SideBar";
-import Body from "./components/Body/Body";
+import SideBar from "./nav/SideBar";
+import Body from "./Body/Body";
 
 function Container(props) {
     return (

@@ -1,5 +1,5 @@
 import React, {useEffect} from 'react';
-import Nav from "../Nav";
+import Nav from "../components/nav/Nav";
 import myData from '../team.json';
 
 import galleryStyle from "../css/gallery.css";
