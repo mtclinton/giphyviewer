@@ -5,10 +5,10 @@ import AppRouter from './router';
 
 ReactDOM.render(
         <React.StrictMode>
-            <Router>
+            <AppRouter>
 
 
-            </Router>
+            </AppRouter>
 
         </React.StrictMode>,
         document.getElementById('root')
