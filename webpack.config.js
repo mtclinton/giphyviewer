@@ -6,16 +6,15 @@ const Dotenv = require('dotenv-webpack');
 
 module.exports = {
     context: __dirname,
-    entry: './src/index.js',
+    entry: './src/index.tsx',
+    resolve: {
+        extensions: ['.ts', '.tsx', '.js', '.jsx', '.scss'],
+    },
     module: {
         rules: [
             {
-                test: /\.jsx?$/,
-                exclude: /node_modules/,
-                loader: 'babel-loader',
-                options: {
-                    presets: ["@babel/preset-react"]
-                }
+                test: /\.tsx?$/,
+                use: 'ts-loader',
             },
             {
                 test: /\.css$/,
@@ -30,6 +29,7 @@ module.exports = {
                             }
                         },
                     },
+                    'postcss-loader'
                 ],
             },
             {
@@ -58,13 +58,13 @@ module.exports = {
             favicon: path.resolve(__dirname, "public/favicon.ico")
         }),
         new MiniCssExtractPlugin({
-            filename: "[hash].css",
-            chunkFilename: "[id]--[hash].css",
+            filename: "[hash].styles",
+            chunkFilename: "[id]--[hash].styles",
             ignoreOrder: false
         }),
         new CopyPlugin({
             patterns: [
-                { from: "public/css/style.css", to: "css" },
+                { from: "public/styles/style.styles", to: "css" },
             ],
         }),
         new Dotenv()

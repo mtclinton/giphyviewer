@@ -1,6 +1,6 @@
-import React from 'react';
+import * as React from 'react';
 
-function BodyNav(props) {
+function BodyNav() {
     return (
         <nav className="breadcrumb" aria-label="breadcrumbs">
             <ul>

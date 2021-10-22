@@ -1,6 +1,6 @@
-import React from 'react';
+import * as React from 'react';
 
-function Header(props) {
+function Header() {
     return (
         <section className="hero is-info welcome is-small">
             <div className="hero-body">

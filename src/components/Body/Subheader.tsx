@@ -1,6 +1,6 @@
-import React from 'react';
+import * as React from 'react';
 
-function Subheader(props) {
+function Subheader() {
     return (
         <section className="info-tiles">
             <div className="tile is-ancestor has-text-centered">
